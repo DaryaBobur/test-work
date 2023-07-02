@@ -18,120 +18,155 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    
     <section class="sidebar-nav">
-  
-        <ul class="sidebar-nav__list">
-          <li class="sidebar-nav__item">
-            <a class="sidebar-nav__link" href="">
-              <svg class="sidebar-nav__icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-home-line"></use>
-              </svg>
-              Головна
-            </a>
-          </li>
-          <li class="sidebar-nav__item">
-            <a class="sidebar-nav__link" href="">
-              <svg class="sidebar-nav__icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-bar-chart-square"></use>
-              </svg>
-              Сторінка1</a
-            >
-          </li>
-          <li class="sidebar-nav__item">
-            <a class="sidebar-nav__link" href=""
-              ><svg class="sidebar-nav__icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-layers-three"></use>
-              </svg>
-              Сторінка2</a
-            >
-          </li>
-          <li class="sidebar-nav__item">
-            <a class="sidebar-nav__link" href=""
-              ><svg class="sidebar-nav__icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-check-done"></use>
-              </svg>
-              Сторінка3</a
-            >
-          </li>
-        </ul>
-        <p><a class="sidebar-nav__link settings" href=""><svg class="sidebar-nav__icon" width="24" height="24">
-            <use href="./images/icons.svg#icon-settings"></use>
-          </svg>Налаштування</a></p>
-   
+      <ul class="sidebar-nav__list">
+        <li class="sidebar-nav__item">
+          <a class="sidebar-nav__link" href="">
+            <svg class="sidebar-nav__icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-home-line"></use>
+            </svg>
+            Головна
+          </a>
+        </li>
+        <li class="sidebar-nav__item">
+          <a class="sidebar-nav__link current" href="">
+            <svg class="sidebar-nav__icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-bar-chart-square"></use>
+            </svg>
+            Сторінка1
+          </a>
+        </li>
+        <li class="sidebar-nav__item">
+          <a class="sidebar-nav__link" href=""
+            ><svg class="sidebar-nav__icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-layers-three"></use>
+            </svg>
+            Сторінка2</a
+          >
+        </li>
+        <li class="sidebar-nav__item">
+          <a class="sidebar-nav__link" href=""
+            ><svg class="sidebar-nav__icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-check-done"></use>
+            </svg>
+            Сторінка3</a
+          >
+        </li>
+      </ul>
+      <p>
+        <a class="sidebar-nav__link settings" href=""
+          ><svg class="sidebar-nav__icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-settings"></use></svg
+          >Налаштування</a
+        >
+      </p>
     </section>
+
     <main>
-        <section>
-            <h1>Start</h1>
-          </section>
-      <section>
+      <section class="header">
+        <h1 class="title">Start</h1>
+      </section>
+
+      <section class="state">
         <div class="container">
-          <ul>
-            <li>
-              <div></div>
-              <p>Стан1</p>
+          <ul class="state__list">
+
+            <li class="state__item">
+              <div class="state-circle"></div>
+              <p class="text">Стан1</p>
             </li>
-            <li>
-              <div></div>
-              <p>Стан2</p>
+
+            <li class="state__item">
+              <div class="state-circle"></div>
+              <p class="text">Стан2</p>
+              <svg class="line">
+                <line x1="0" y1="30" x2="120" y2="30" stroke-color="#f8a100" />
+              </svg>
             </li>
-            <li>
-              <div></div>
-              <p>Стан3</p>
+
+            <li class="state__item">
+              <div class="state-circle inactive"></div>
+              <p class="text inactive-text">Стан3</p>
+              <svg class="line">
+                <line x1="0" y1="30" x2="120" y2="30" stroke-color="#f8a100" />
+              </svg>
             </li>
-            <li>
-              <div></div>
-              <p>Стан4</p>
+
+            <li class="state__item">
+              <div class="state-circle inactive"></div>
+              <p class="text inactive-text">Стан4</p>
+              <svg class="line">
+                <line class="inactive-line" y1="30" x2="120" y2="30" />
+              </svg>
             </li>
-            <li>
-              <div></div>
-              <p>Стан5</p>
+
+            <li class="state__item">
+              <div class="state-circle inactive"></div>
+              <p class="text inactive-text">Стан5</p>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+
+      <section class="information">
+        <div class="container">
+          <ul class="information__list">
+            <li class="information__item">
+              <div>
+                <h2 class="subtitle">Information</h2>
+                <p class="info-text">
+                  Info Number:<span class="details">903049</span>
+                </p>
+                <p class="info-text">
+                  Pick up Place:<span class="details">Sweden</span>
+                </p>
+              </div>
+            </li>
+            <li class="information__item more">
+              <div class="wrap">
+                <p class="description">
+                  We are here <span class="desc-details">Long time to go</span>
+                </p>
+                <img
+                  class="img-car"
+                  src="./images/Truck.png"
+                  alt="Car"
+                  width="110"
+                  height="71"
+                />
+              </div>
             </li>
           </ul>
         </div>
       </section>
 
-      <section>
+      <section class="form-luggage">
         <div class="container">
-          <ul>
-            <li>
-              <div>
-                <h2>Information</h2>
-                <p>Info Number:<span>903049</span></p>
-                <p>Pick up Place:<span>Sweden</span></p>
-              </div>
-            </li>
-            <li>
-              <div>
-                <p>We are here <span>Long time to go</span></p>
-                <img src="./images/Truck.png" alt="Car" />
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section>
-        <div class="container">
-          <h2>Перезамовте Багаж</h2>
-          <form>
-            <label for="num1">Дропдаун</label>
-            <select name="num1" id="num1">
-              <option value="select">Select option</option>
-              <option value="10">10</option>
-              <option value="20">20</option>
-              <option value="30">30</option>
-            </select>
+          <div class="form-wrap">
+            <h2 class="title-form">Перезамовте Багаж</h2>
 
-            <label for="num2">Дропдаун</label>
-            <select name="num2" id="num2">
-              <option value="select">Select option</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-            </select>
+            <form class="form">
+              <label for="num1">Дропдаун</label>
+              <select class="select" name="num1" id="num1">
+                <option value="select">Select option</option>
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
+              </select>
 
-            <button type="submit">Done</button>
-          </form>
+              <label for="num2">Дропдаун</label>
+              <select class="select" name="num2" id="num2">
+                <option value="select">Select option</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+
+              <button class="btn-send" type="submit">Done</button>
+            </form>
+            
+          </div>
         </div>
       </section>
     </main>
