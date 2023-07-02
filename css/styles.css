@@ -303,6 +303,10 @@ label {
   cursor: pointer;
 }
 
+.select:not(:last-child) {
+  margin-bottom: 18px;
+}
+
 .btn-send {
   display: flex;
   justify-content: center;
